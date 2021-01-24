@@ -1,0 +1,89 @@
+body{
+background-color: #f1f1f1;
+ 
+}
+.main
+{
+background-image: url("happy.png");
+}
+
+.tagline
+{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color:#f0c38e;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+.second-line
+{
+    padding-bottom: 8rem;
+    text-align: center;
+    color:#fcf8e8;
+    font-family:'Dancing Script', cursive ;
+    font-size: 3rem;
+}
+
+.goto
+{
+    text-align: center;
+    position: relative;
+    left: 35rem;
+    margin-bottom: 10rem;
+}
+
+.response
+{
+    background-color: #fdffbc;
+}
+
+.command
+{
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+    padding-top: 1rem;
+}
+.last-button
+{
+    position:relative;
+    left: 32rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.declare
+{
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+}
+
+.table
+{
+    text-align: center;
+    background-color: #fff8cd;
+}
+
+.yname
+{
+    font-size: 40px;
+    color: #534e52;
+    font-family: 'Montserrat', sans-serif;
+}
+.yproduct
+{
+    font-size: 28px;
+    color: #707070;
+    font-family: 'Josefin Slab', serif;
+}
+.yreview
+{
+    font-size: 24px;
+    color: #707070;
+    font-family: 'Josefin Slab', serif;
+}

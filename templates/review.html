@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Review{% endblock %}
+
+{% block main %}
+
+<div class="container response">
+    <div class="row">
+        <div class="col">
+             <h1 class="command">Submit Your Review.</h1>
+             <hr>
+
+             <form action="/review" method="POST">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Product</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Review</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <input class="btn btn-primary last-button " type="submit" value="Submit">
+             
+            
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<h1 class="declare">Other Customers' Reviews</h1>
+<div class="table">
+{% for review in reviews %}
+    <h4 class="yname"> 
+     <b>Name</b>: {{ review.name }}
+    </h4>
+    <p class="yproduct">
+      <b>Product</b>: {{ review.product }}
+    </p>
+    <p class="yreview">
+     <b>Review</b>: {{ review.review }}
+    </p>
+    <hr>
+{% endfor %}
+</div>
+{% endblock %}
